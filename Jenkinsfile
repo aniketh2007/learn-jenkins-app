@@ -46,7 +46,9 @@ pipeline {
             }
             steps {
                 sh '''
-                sudo npm install -g netlify-cli
+                mkdir -p ~/.npm-global
+                npm config set prefix '~/.npm-global'
+
                 netlify --version
                 '''
                 
