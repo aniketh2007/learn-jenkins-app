@@ -53,6 +53,9 @@ pipeline {
                 npm install --save-dev netlify-cli
                 netlify --version
                 echo "Deploy to Production to site id"
+                node_module/ .bin/netlify status
+                node_module/ .bin/netlify deploy -dir=build
+
                 '''
                 
             }
