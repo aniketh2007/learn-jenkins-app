@@ -1,13 +1,13 @@
 pipeline{
-    agent any{
+    agent any
         
         stages{
-            stage("Hello"){
+            stage("Hello")
                 steps{
                     sh 'echo "Hello Jenkins"'
                 }
                 
             }
-        }
-    }
-}
+        
+ }
+
